@@ -173,7 +173,7 @@ export interface TableProps<T> {
   locale?: TableLocale;
   indentSize?: number;
   onRowClick?: (record: T, index: number, event: Event) => void;
-  onRow?: (record: T, index: number) => TableEventListeners;
+  onRow?: (record: T, index: number) => any; // https://github.com/ant-design/ant-design/issues/17245#issuecomment-504807714
   onHeaderRow?: (columns: ColumnProps<T>[]) => TableEventListeners;
   useFixedHeader?: boolean;
   bordered?: boolean;
